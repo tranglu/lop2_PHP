@@ -42,7 +42,8 @@
 					<div class="form-row">
 						<label>upload anh</label>
 					     <img src="<?=$key['slide_image'] ?>" alt="" class="img-fluid">
-					     <input type="hidden"  class="form-control" name="slide_image2" value = "<?=$key['slide_image'] ?>">
+					     <!-- <input type="hidden"  class="form-control" name="slide_image2" value = "<?=$key['slide_image'] ?>"> -->
+					   	<input type="hidden"  class="form-control" name="slide_image_old[]" value = "<?=$key['slide_image'] ?>">
    						 <input type="file" name="slide_image[]" value="<?= $key['slide_image']?>"id="slide_image" class="form-control" placeholder="Upload ANH SLIDE">
 					</div>
 					<?php endforeach ?>

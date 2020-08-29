@@ -1,0 +1,191 @@
+*{margin: 0; padding: 0;} 
+html,body{
+	color: black;
+	cursor:pointer;/* chuột hình bàn tay */
+}
+::selection{
+	background: yellow;
+	color: red;
+	
+}
+p.card-text::first-letter{
+	font-size: 50px;
+	color: red;
+}
+.navbar{
+	background-color: white;
+}
+.layer1{
+	position: relative;
+	
+}
+.layer2 {
+	position: absolute;
+	top: 25%;
+	left: 20%;
+}
+.nutslide{
+	font-size: 14px;
+	width: 150px;
+	height: 40px;
+	line-height: 30px;
+	padding:0;
+	animation: dichuyen 0.5s;
+	animation-iteration-count:3;
+}
+.nutslide::selection{
+	content: "thuytrang";
+	color: red;
+}
+@keyframes dichuyen{
+	from{
+		transform: translateY(-5px);
+	}
+	to{
+		transform: translateY(3px);
+	}
+}
+.onestory{
+	animation: xoay 1s forwards;
+}
+
+@keyframes xoay{
+	from{
+		opacity: 0;
+		transform:rotateY(-90deg);
+	}
+	to{
+		opacity: 1		
+	}
+}
+.facebook{
+	animation: xoayngang 0.5s forwards;
+}
+@keyframes xoayngang{
+	from{
+		opacity: 0;
+		transform:rotateZ(90deg);
+	}
+	to{
+		opacity: 1		
+	}
+}
+.nut{
+	display: block;
+	width: 50px;
+	height: 50px;
+	color: red;
+}
+.banner{
+	width: 100%;
+	height: 500px;
+	background-image: url("images/slide03.jpg");
+	background-size: cover;
+	position: relative;
+	animation: truotlen 1s forwards;
+}
+.motmon{
+	animation: truotlen 1s forwards;
+}
+@keyframes truotlen{
+	from{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to{
+		opacity: 1	
+		transform: translateY(-100px);	
+	}
+}
+.chu{
+	position: absolute;
+	top: 40%;
+	left: 20%;
+}
+.thucdon{
+	height: 40px;
+	position: absolute;
+	bottom: 5%;
+	left: 35%;
+	font-size: 20px;
+	font-weight: bold;
+}
+.thucdon>a{
+	margin:20px;
+	color: white;
+}
+.tenmon{
+	background: white;
+    transform: translateY(3px);
+    display: inline-block;
+    padding-right: 7px;
+}
+.tren {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: #333333;
+    border-bottom: 2px dotted #999999;
+}
+.tren>span{
+	 padding-right: 7px;
+	 background: white;
+	 display: inline-block;
+	 transform: translateY(3px);
+}
+.special{
+	background-image: url("images/BG2.jpg");
+	background-size: cover contain;
+	width: 100%;
+	height: 400px;
+}
+.relaxing{
+	width: 100%;
+	height: 400px;
+	background-color: gray;
+	position: relative;
+}
+.contact, footer, .ngay, .gio{
+	background-color: gray !important;
+}
+
+/* trang about */
+.master_cooking{
+	background-image: url("images/bg_about.jpg");
+}
+/* trang news */
+.noidungtin{
+border-bottom: 1px dotted gray;
+}
+.search{
+	position: relative;
+}
+.nutsearch{
+	position: absolute;
+	top:10px;
+	right: 20px;
+}
+.motcategory{
+	border-bottom: 1px solid gray;
+}
+.motcategory>ul>li{
+	line-height: 35px;
+}
+.ulphantrang>li{
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+	display: inline-block;
+    color: #333;
+    border: 1px solid #eee;
+    border-radius: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.current,.ulphantrang>li:hover{
+	background-color: yellow;
+}
+.nutdichuyen{
+	width: 150px !important;
+}

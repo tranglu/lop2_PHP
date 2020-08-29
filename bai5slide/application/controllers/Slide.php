@@ -88,7 +88,24 @@ class Slide extends CI_Controller {
 			};
 		// them moi noi dung vao json
 		}
-
+	public function suaSlide(){
+		// lay ve noi dung
+		$title=$this->input->post('title');// day la mang
+		$description=$this->input->post('description');
+		$button_nut=$this->input->post('button_nut');
+		$button_text=$this->input->post('button_text');
+				echo "<pre>";
+				var_dump($title);
+				echo "</pre>";
+		// tao mot mang " tat ca slide"
+		// insert tung phan tu vao mang tatcaslide
+		// đưa thành json
+		// goi model update dữ liệu
+	}
+//test Lam sơn
+public function quanlytin(){
+	$this->load->view('testlamson');
+}
 }
 
 /* End of file Slide.php */
